@@ -63,7 +63,7 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'iqtmovnu_hustle',
+        'NAME': 'iqtmovnu_updates',
         'USER': 'iqtmovnu_admin',
         'PASSWORD': 'Admin@2024',
         'HOST': 'localhost',
