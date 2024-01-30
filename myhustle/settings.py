@@ -53,11 +53,19 @@ WSGI_APPLICATION = 'myhustle.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'django',
+    #     'USER': 'root',
+    #     'PASSWORD': '',
+    #     'HOST': 'localhost',
+    #     'PORT': '3306',
+    # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
-        'USER': 'root',
-        'PASSWORD': '',
+        'NAME': 'iqtmovnu_hustle',
+        'USER': 'iqtmovnu_admin',
+        'PASSWORD': 'Admin@2024',
         'HOST': 'localhost',
         'PORT': '3306',
     }
