@@ -1,0 +1,33 @@
+{% extends "auth/base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<form action="{%url 'create' %}" method="post" enctype="multipart/form-data" class="card col-md-8 col-10 p-3">
+    {% csrf_token %}
+    <h1 class="text-center">Register</h1>
+    <div class="mb-2 form-floating">
+        <input type="text" placeholder=" " class="form-control" name="name" id="">
+        <label for="">Name</label>
+    </div>
+    <div class="mb-2 form-floating">
+        <input type="text" placeholder=" " class="form-control" name="contact" id="">
+        <label for="">Phone No.</label>
+    </div>
+    <div class="mb-2 form-floating">
+        <input type="email" placeholder=" " class="form-control" name="email">
+
+        <label for="" class="col-md-4">Email</label>
+    </div>
+    <div class="mb-2 form-floating">
+        <input type="file" accept="image/*" placeholder=" " class="form-control" name="avatar">
+
+        <label for="" class="col-md-4">Avatar</label>
+    </div>
+    <div class="mb-2 form-floating">
+        <input type="password" placeholder=" " class="form-control" name="password" id="">
+        <label for="" class="col-md-4">Password</label>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Register</button>
+    </div>
+</form>
+{% endblock %}
