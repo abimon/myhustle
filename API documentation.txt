@@ -1,0 +1,49 @@
+USER AUTHENTICATION API
+$baseURL = https://updates.myhustlebox.com
+
+User Registration
+URL $baseURL/api/signup/
+Fields = {
+    username
+    first_name(nullable)
+    last_name(nullable)
+    email
+    contact
+    avatar
+    password
+}
+
+User Login
+URL $baseURL/api/signup/
+Fields = {
+    username
+    password
+}
+
+User Update
+URL $baseURL/api/update/
+Headers Authorization Token Your_token
+Fields = {
+    username(nullable)
+    first_name(nullable)
+    last_name(nullable)
+    email(nullable)
+    contact(nullable)
+    avatar(nullable)
+    password(nullable)
+}
+
+Media
+Upload
+URL $baseURL/videos/upload/
+Fields = {
+    title
+    description
+    category
+    community
+    file
+    user(id)
+}
+
+View all
+URL $baseURL/videos/view/

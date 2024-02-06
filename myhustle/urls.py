@@ -5,8 +5,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user/',include('userAuth.urls'))
+    path('api/',include('authUser.urls')),
+    path('videos/',include('mediaManage.urls'))
+
 ]
-# urls.py
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
